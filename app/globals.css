@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "Inter", sans-serif;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+  --color-accent: #591ddd;
+  --color-accent-secondary: #8728e1;
+
+  --background-image-body: url("/body-bg.png");
+  --background-image-hero: url("/hero/img.svg");
+}
+
+body {
+  @apply text-white bg-body bg-cover bg-no-repeat font-primary;
+}
+
+.container {
+  @apply w-full max-w-360 mx-auto px-4 xl:px-0;
+}
+
+.h2 {
+  @apply text-5xl font-semibold;
+}
+
+.lead {
+  @apply text-lg font-light text-white/80;
+}
