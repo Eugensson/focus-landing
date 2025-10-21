@@ -4,3 +4,10 @@ export type Brand = {
   src: StaticImport;
   alt: string;
 };
+
+export type Feature = {
+  imgSrc: StaticImport;
+  title: string;
+  description: string;
+  highlight: string[];
+};

@@ -29,5 +29,5 @@ body {
 }
 
 .lead {
-  @apply text-xl font-light text-white/80;
+  @apply text-lg font-light text-white/80;
 }
