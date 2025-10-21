@@ -27,3 +27,14 @@ export const fadeInUpSpring = (delay: number, duration: number): Variants => ({
     } as Transition,
   },
 });
+
+export const iconAnimation = {
+  initial: { opacity: 0, y: 60 },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    } as Transition,
+  }),
+};

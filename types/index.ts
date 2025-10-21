@@ -11,3 +11,8 @@ export type Feature = {
   description: string;
   highlight: string[];
 };
+
+export type Integration = {
+  src: StaticImport;
+  alt: string;
+};

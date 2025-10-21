@@ -11,7 +11,24 @@ import feature2 from "@/public/features/img-2.svg";
 import feature3 from "@/public/features/img-3.svg";
 import feature4 from "@/public/features/img-4.svg";
 
-import { Brand, Feature } from "@/types";
+import notionImg from "@/public/integrations/notion.svg";
+import slackImg from "@/public/integrations/slack.svg";
+import googleDriveImg from "@/public/integrations/google_drive.svg";
+import intercomImg from "@/public/integrations/intercom.svg";
+import jiraImg from "@/public/integrations/jira.svg";
+import dropboxImg from "@/public/integrations/dropbox.svg";
+import stripeImg from "@/public/integrations/stripe.svg";
+import zapierImg from "@/public/integrations/zapier.svg";
+import figmaImg from "@/public/integrations/figma.svg";
+import confluenceImg from "@/public/integrations/confluence.svg";
+import mailchimpImg from "@/public/integrations/mailchimp.svg";
+import whatsappImg from "@/public/integrations/whatsapp.svg";
+import discordImg from "@/public/integrations/discord.svg";
+import bitbucketImg from "@/public/integrations/bitbucket.svg";
+import invisionImg from "@/public/integrations/invision.svg";
+import evernoteImg from "@/public/integrations/evernote.svg";
+
+import { Brand, Feature, Integration } from "@/types";
 
 export const brandsData: Brand[] = [
   { src: brand1, alt: "Odeao Labs Logo" },
@@ -22,49 +39,6 @@ export const brandsData: Brand[] = [
   { src: brand6, alt: "Sisyphus Logo" },
   { src: brand7, alt: "Ikigai Labs Logo" },
 ];
-
-// export const featuresData: Feature[] = [
-//   {
-//     imgSrc: feature1,
-//     title: "Smart Task Management",
-//     description: "Organize and prioritize tasks effortlessly.",
-//     highlight: [
-//       "Set due dates and reminders.",
-//       "Track progress and milestones.",
-//       "Easily sort tasks by priority.",
-//     ],
-//   },
-//   {
-//     imgSrc: feature2,
-//     title: "Real-Time Collaboration",
-//     description: "Collaborate with your team in real-time.",
-//     highlight: [
-//       "Share updates instantly with teammates.",
-//       "Edit documents and boards together.",
-//       "Keep everyone aligned with live changes.",
-//     ],
-//   },
-//   {
-//     imgSrc: feature3,
-//     title: "Advanced Analytics",
-//     description: "Gain insights to boost your productivity.",
-//     highlight: [
-//       "View performance metrics in one dashboard.",
-//       "Identify trends and productivity patterns.",
-//       "Make data-driven decisions effortlessly.",
-//     ],
-//   },
-//   {
-//     imgSrc: feature4,
-//     title: "Customizable Workspaces",
-//     description: "Personalize your workspace for maximum efficiency.",
-//     highlight: [
-//       "Design layouts to match your workflow.",
-//       "Use themes and widgets for quick access.",
-//       "Save templates for recurring projects.",
-//     ],
-//   },
-// ];
 
 export const featuresData: Feature[] = [
   {
@@ -107,4 +81,23 @@ export const featuresData: Feature[] = [
       "Create reusable templates for recurring workflows.",
     ],
   },
+];
+
+export const integrationData: Integration[] = [
+  { src: notionImg, alt: "Notion Logo" },
+  { src: slackImg, alt: "Slack Logo" },
+  { src: googleDriveImg, alt: "Google Drive Logo" },
+  { src: intercomImg, alt: "Intercom Logo" },
+  { src: jiraImg, alt: "Jira Logo" },
+  { src: dropboxImg, alt: "Dropbox Logo" },
+  { src: stripeImg, alt: "Stripe Logo" },
+  { src: zapierImg, alt: "Zapier Logo" },
+  { src: figmaImg, alt: "Figma Logo" },
+  { src: confluenceImg, alt: "Confluence Logo" },
+  { src: mailchimpImg, alt: "Mailchimp Logo" },
+  { src: whatsappImg, alt: "WhatsApp Logo" },
+  { src: discordImg, alt: "Discord Logo" },
+  { src: bitbucketImg, alt: "Bitbucket Logo" },
+  { src: invisionImg, alt: "Invision Logo" },
+  { src: evernoteImg, alt: "Evernote Logo" },
 ];
