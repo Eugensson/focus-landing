@@ -28,7 +28,7 @@ import bitbucketImg from "@/public/integrations/bitbucket.svg";
 import invisionImg from "@/public/integrations/invision.svg";
 import evernoteImg from "@/public/integrations/evernote.svg";
 
-import { Brand, Feature, Integration } from "@/types";
+import { Brand, Feature, Integration, Testimonial } from "@/types";
 
 export const brandsData: Brand[] = [
   { src: brand1, alt: "Odeao Labs Logo" },
@@ -100,4 +100,49 @@ export const integrationData: Integration[] = [
   { src: bitbucketImg, alt: "Bitbucket Logo" },
   { src: invisionImg, alt: "Invision Logo" },
   { src: evernoteImg, alt: "Evernote Logo" },
+];
+
+export const testimonialsData: Testimonial[] = [
+  {
+    id: "1",
+    name: "James Walker",
+    message:
+      "Focus transformed how our team manages tasks. Smart tools and real-time updates keep everyone aligned and working efficiently every day.",
+  },
+  {
+    id: "2",
+    name: "Charlotte Hughes",
+    message:
+      "Since adopting Focus, our productivity soared. The intuitive design and seamless integrations make teamwork smooth and rewarding.",
+  },
+  {
+    id: "3",
+    name: "Benjamin Turner",
+    message:
+      "Focus streamlined our communication across teams. Clear analytics and automation keep every project transparent and on track.",
+  },
+  {
+    id: "4",
+    name: "Amelia Harris",
+    message:
+      "Our remote team stays perfectly connected with Focus. Instant updates and smart task management boost workflow efficiency daily.",
+  },
+  {
+    id: "5",
+    name: "Oliver Bennett",
+    message:
+      "We use Focus daily to manage client projects. Its modern design and reliable integrations make coordination simple and fast.",
+  },
+  {
+    id: "6",
+    name: "Isla Robinson",
+    message:
+      "Focus unites all our tools in one workspace. It’s intuitive, fast, and keeps our team organised and productive at every stage.",
+  },
+  {
+    id: "7",
+    name: "Henry Clarke",
+    message:
+      "With Focus, our workflows are faster and clearer. Tasks, updates, and reports stay centralised, improving collaboration for all.",
+  },
 ];

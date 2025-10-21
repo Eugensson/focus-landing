@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ButtonPrimary } from "@/components/button-primary";
 
 import { integrationData } from "@/lib/data";
-import { iconAnimation, fadeInOnScroll, fadeInUpSpring } from "@/lib/variants";
+import { iconAnimation, fadeInOnScroll } from "@/lib/variants";
 
 export const Integrations = () => {
   return (
@@ -39,9 +39,16 @@ export const Integrations = () => {
           ))}
         </ul>
         <motion.div
-          variants={fadeInUpSpring(0.6, 0.8)}
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, y: 60, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{
+            delay: 0.6,
+            duration: 0.4,
+            ease: [0.6, -0.05, 0.01, 0.99],
+            type: "spring",
+            stiffness: 100,
+          }}
+          className="flex flex-col items-center justify-center gap-4"
         >
           <ButtonPrimary btnText="See all" />
         </motion.div>

@@ -16,3 +16,9 @@ export type Integration = {
   src: StaticImport;
   alt: string;
 };
+
+export type Testimonial = {
+  id: string;
+  name: string;
+  message: string;
+};
