@@ -1,3 +1,12 @@
+import {
+  RiYoutubeLine,
+  RiTwitterXFill,
+  RiLinkedinBoxFill,
+  RiFacebookCircleFill,
+} from "react-icons/ri";
+import { ImDribbble } from "react-icons/im";
+import { RxDiscordLogo, RxGithubLogo } from "react-icons/rx";
+
 import brand1 from "@/public/brands/brand-1.svg";
 import brand2 from "@/public/brands/brand-2.svg";
 import brand3 from "@/public/brands/brand-3.svg";
@@ -28,7 +37,7 @@ import bitbucketImg from "@/public/integrations/bitbucket.svg";
 import invisionImg from "@/public/integrations/invision.svg";
 import evernoteImg from "@/public/integrations/evernote.svg";
 
-import { Brand, Feature, Integration, Testimonial } from "@/types";
+import { Brand, Feature, Integration, Social, Testimonial } from "@/types";
 
 export const brandsData: Brand[] = [
   { src: brand1, alt: "Odeao Labs Logo" },
@@ -144,5 +153,43 @@ export const testimonialsData: Testimonial[] = [
     name: "Henry Clarke",
     message:
       "With Focus, our workflows are faster and clearer. Tasks, updates, and reports stay centralised, improving collaboration for all.",
+  },
+];
+
+export const socialsData: Social[] = [
+  {
+    icon: RiTwitterXFill,
+    href: "https://twitter.com",
+    label: "Twitter",
+  },
+  {
+    icon: RiLinkedinBoxFill,
+    href: "https://linkedin.com",
+    label: "Linkedin",
+  },
+  {
+    icon: RiFacebookCircleFill,
+    href: "https://facebook.com",
+    label: "Facebook",
+  },
+  {
+    icon: RxGithubLogo,
+    href: "https://github.com",
+    label: "Github",
+  },
+  {
+    icon: ImDribbble,
+    href: "https://dribbble.com",
+    label: "Dribbble",
+  },
+  {
+    icon: RiYoutubeLine,
+    href: "https://youtube.com",
+    label: "Youtube",
+  },
+  {
+    icon: RxDiscordLogo,
+    href: "https://discord.com",
+    label: "Discord",
   },
 ];

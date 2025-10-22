@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export type Brand = {
@@ -21,4 +22,10 @@ export type Testimonial = {
   id: string;
   name: string;
   message: string;
+};
+
+export type Social = {
+  icon: IconType;
+  href: string;
+  label: string;
 };
