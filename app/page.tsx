@@ -3,6 +3,7 @@
 import ReactLenis from "lenis/react";
 
 import { Hero } from "@/components/hero";
+import { Trial } from "@/components/trial";
 import { Brands } from "@/components/brands";
 import { Features } from "@/components/features";
 import { Integrations } from "@/components/integrations";
@@ -17,6 +18,7 @@ const Home = () => {
         <Features />
         <Integrations />
         <Testimonials />
+        <Trial />
         <div className="h-1000" />
       </ReactLenis>
     </>

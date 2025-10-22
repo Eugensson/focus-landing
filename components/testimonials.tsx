@@ -9,7 +9,7 @@ import { fadeInOnScroll } from "@/lib/variants";
 
 export const Testimonials = () => {
   return (
-    <section className="w-full mb-24 xl:mb-32 xl:py-24 flex items-center justify-center">
+    <section className="w-full mb-24 xl:mb-32 flex items-center justify-center">
       <div className="container overflow-hidden">
         <motion.div
           variants={fadeInOnScroll(0.2, 0.4)}
